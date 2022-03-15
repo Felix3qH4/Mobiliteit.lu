@@ -35,4 +35,9 @@ BUT this also means that if 4 buses are on time and one bus is 5 minutes late, i
 
 You can change the criterias for the colors on the bottom right.
 So that if you want green to be buses late from 0 to 5 minutes you can change that with the slider.
-(Note: You will have to adapt the other sliders too if you change the time too much, so you just see one color.)
+(Note: You will have to adapt the other sliders too if you change the time too much, so you don't just see one color.)
+
+You can hide/show the different colors by clicking on the respective button on the bottom left.
+This can be useful to see on which main roads, buses are late. You can then hide the green and black dots, so they don't cover up the rest.
+
+
