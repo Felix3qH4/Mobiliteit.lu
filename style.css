@@ -1,0 +1,25 @@
+/* Styles go here */
+
+#map {
+    height: 100vh;
+  }
+  
+  body {
+    margin: 0px;
+  }
+
+  @keyframes fade {
+    from { opacity: 0.5;}
+  }
+
+  .blinking {
+    animation: fade 1s infinite alternate;
+  }
+
+.rangeslider {
+  background: white;
+  height: 220px;
+  width: 410px;
+  padding: 10px;
+}
+

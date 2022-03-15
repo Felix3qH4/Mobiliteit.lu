@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+      
+    <div id="map"></div>
+    <div class="leaflet-bottom leaflet-left">
+      <center>
+        <input id="hide_green" type="button" value="Show/Hide Green" style="color:green; font-size:large" onclick="do_hide_green();" class="btnStyle span3 leaflet-control" />
+        <input id="hide_yellow" type="button" value="Show/Hide Yellow" style="color:rgb(172, 172, 37); font-size:large" onclick="do_hide_yellow();" class="btnStyle span3 leaflet-control" />
+        <input id="hide_orange" type="button" value="Show/Hide Orange" style="color:orange; font-size:large" onclick="do_hide_orange();" class="btnStyle span3 leaflet-control" />
+        <input id="hide_red" type="button" value="Show/Hide Red" style="color:red; font-size:large" onclick="do_hide_red();" class="btnStyle span3 leaflet-control" />
+        <input id="hide_others" type="button" value="Show/Hide Others" style="color:black; font-size:large" onclick="do_hide_others();" class="btnStyle span3 leaflet-control" />
+      </center>
+    </div>
+
+    <div class="leaflet-bottom leaflet-right">
+        <div class="rangeslider" style="color:black;font-size: large">
+          <center><label style="color: black; font-size: large;">Change criterias for the different lateness times:<br>(in minutes)</label></center>
+          
+          <label for="change_late_1" style="color:green;font-size: large;">Lateness 1:</label><br>
+          <input id="change_late_1" type="range" min="-1" max="60" value="3" style="width:75%;float:right" class="btnStyle span3 leaflet-control" oninput="update_lateness_all();">
+          <span id="change_late_1_text">0-3</span><br>
+          
+          <label for="change_late_2" style="color:rgb(172, 172, 37);font-size:large;">Lateness 2:</label><br>
+          <input id="change_late_2" type="range" min="-1" max="60" value="6" style="width:75%;float:right" class="btnStyle span3 leaflet-control" oninput="update_lateness_all();">
+          <span id="change_late_2_text">3-6</span><br>
+
+          <label style="color:orange; font-size:large;">Lateness 3:</label><br>
+          <input id="change_late_3" type="range" min="-1" max="60" value="10" style=" width:75%;float:right" class="btnStyle span3 leaflet-control" oninput="update_lateness_all();">
+          <span id="change_late_3_text">6-10</span><br>
+          <br>
+          
+          <input id="reset" type="button" value="Reset" style="color:black;font-size: large;" class="btnStyle span3 leaflet-control">
+
+        </div>        
+      </center>
+    </div>
+    
+
+    <div class="leaflet-top leaflet-right">
+      <center>
+        <input id="show_late_total" type="button" value="Show total lateness" style="color:black; font-size: large" onclick="lateness_total=true;lateness_average=false" class="btnStyle span3 leaflet-control" />
+        <input id="show_late_average" type="button" value="Show average lateness" style="color:black; font-size: large" onclick="lateness_total=false;lateness_average=true;" class="btnStyle span3 leaflet-control" />
+      </center>
+    </div>
+    
+    <script src="./data/bus_stops.json"></script>
+    <script>
+      function load_js() {
+        var head = document.getElementsByTagName('body')[0];
+        var script = document.createElement('script');
+        script.src = './data/bus_stops.json';
+        head.appendChild(script);
+      };
+      
+      var rel = window.setInterval(function() {
+        load_js();
+      }, 10000); //equals 10 seconds
+    </script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
