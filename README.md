@@ -41,3 +41,12 @@ You can hide/show the different colors by clicking on the respective button on t
 This can be useful to see on which main roads, buses are late. You can then hide the green and black dots, so they don't cover up the rest.
 
 
+# !It is possible that the API-Key will be disabled after some time. The program won't work without a valid API-Key, so you will have to ask for your own (mobiliteit.lu)(opendata-api@verkeiersverbond.lu)(I have nothing to do with them. They are the ones providing the key for the API and are a public entity from the Luxemburgish government) and ask for its request limit to be made higher!
+
+(The API which I use and is made available to the public by mobiliteit.lu is an API from Hafas.de)
+(The link to the user interface embedded on Hafas.de is: cdt.hafas.de)
+(So if you don't want an API-Key you can try getting your data that way altough their API is not open to public.)
+(But there are ways to get the data from their servers.)
+
+
+If you have any questions, feel free to contact me.
