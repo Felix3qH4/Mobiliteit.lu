@@ -26,7 +26,7 @@ ACCESS_ID = "e57f91f7-0a5d-4d9b-a333-566839963579"
 LANG = "fr"
 FORMAT = "json"
 
-BUS_STOPS_FILE = "data/bus_stops_updated.json"
+BUS_STOPS_FILE = "data/bus_stops_python.json"
 TEMP_TOTAL_DIR = "data/temp/total/"
 TEMP_AVERAGE_DIR = "data/temp/average/"
 TIMEFORMAT = "%H:%M:%S"
