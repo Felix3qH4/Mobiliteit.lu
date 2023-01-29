@@ -5,6 +5,7 @@ Real-Time tracking of bus lines across Luxembourg thanks to the API of Mobilitei
 Shows how late buses are at a station.
 Some stations may have problems for example be unavailable at a certain moment, that is why there are black dots on the map.
 
+DOCUMENTATION FOR THE MOBILITEIT.LU API: https://github.com/Felix3qH4/Mobiliteit.lu-API-documentation
 # How to start
 Start the "main.py" file. You will need Python (works on Python 3.9.10).
 You will see an output while it works.
