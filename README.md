@@ -1,4 +1,4 @@
-Last updated on: March 15th 2022
+Last updated on: August 22nd 2025
 
 # Real-Time Bus lateness tracker
 Real-Time tracking of bus lines across Luxembourg thanks to the API of Mobiliteit.lu
